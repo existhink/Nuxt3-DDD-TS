@@ -1,4 +1,4 @@
-# 🌟 [Eiger] Wholesales External
+# 🌟 Nuxt3 - DDD - TS
 
 This project built with Vue, Nuxt, TypeScript, TailwindCSS, and much more.
 
@@ -143,7 +143,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 1. Clone the Repository
 
 ```bash
-git clone https://git.eigerindo.co.id/careom/fe-wholesale.git
+git clone https://github.com/existhink/Nuxt3-DDD-TS.git
 ```
 
 2. Install dependencies using bun
@@ -226,6 +226,20 @@ server
 
 ### 📩 Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://git.eigerindo.co.id/careom/fe-wholesale/issues/new) by including your search query and the expected result.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://github.com/existhink/Nuxt3-DDD-TS/issues/new) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://git.eigerindo.co.id/careom/fe-wholesale/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/existhink/Nuxt3-DDD-TS/issues/new). Please include sample queries and their corresponding results.
+
+## 📜 Credits
+
+List your collaborators, if any, with links to their GitHub profiles.
+
+I'd like to acknowledge my collaborators, who contributed to the success of this project. Below are links to their GitHub profiles.
+
+Furthermore, I utilized certain third-party assets that require attribution. Find the creators' links in this section.
+
+If I followed tutorials during development, I'd include the links to those as well.
+
+👦 Rafi Khoirulloh <br>
+Email: khoirulloh.rafi2@gmail.com <br>
+GitHub: @apiiyu
