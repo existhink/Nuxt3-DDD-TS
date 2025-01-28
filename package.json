@@ -1,0 +1,45 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "start:dev": "node lint-check.mjs && nuxt dev",
+    "generate": "nuxt generate",
+    "generate:module": "node generate-module.mjs",
+    "lint:check": "node lint-check.mjs",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.7.5",
+    "@nuxt/image": "1.9.0",
+    "@nuxt/kit": "^3.15.3",
+    "@pinia/nuxt": "^0.9.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@vueuse/nuxt": "12.5.0",
+    "consola": "^3.4.0",
+    "eslint": "^9.18.0",
+    "nuxt": "^3.15.3",
+    "nuxt-security": "2.1.5",
+    "pinia": "^2.3.1",
+    "tailwindcss": "^4.0.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-remove-console": "^2.2.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@nuxt/test-utils": "^3.15.4",
+    "@vue/test-utils": "^2.4.6",
+    "happy-dom": "^16.7.3",
+    "husky": "^9.1.7",
+    "playwright-core": "^1.50.0",
+    "typescript": "^5.7.3",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vitest": "^3.0.4"
+  }
+}
