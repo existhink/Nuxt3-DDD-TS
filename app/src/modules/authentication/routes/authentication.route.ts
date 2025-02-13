@@ -1,5 +1,5 @@
 // Components
-import AppBaseWrapper from '../../../core/components/base/Wrapper.vue';
+import BaseWrapper from '../../../core/components/base/BaseWrapper.vue';
 
 // Interfaces
 import type { RouteRecordRaw } from 'vue-router';
@@ -7,7 +7,7 @@ import type { RouteRecordRaw } from 'vue-router';
 const routes: RouteRecordRaw[] = [
   {
     path: '/authentication',
-    component: AppBaseWrapper,
+    component: BaseWrapper,
     children: [
       {
         path: 'login',

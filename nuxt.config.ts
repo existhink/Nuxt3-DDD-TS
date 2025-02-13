@@ -27,21 +27,10 @@ export default defineNuxtConfig({
   /**
    * @description Here's you can configure the app options
    */
-  app: {},
-
-  /**
-   * @description Specify a compatibility date for your app. This is used to control the behavior of presets in Nitro, Nuxt Image and other modules that may change behavior without a major version bump.
-   */
-  compatibilityDate: '2024-11-01',
-
-  /**
-   * @description Here's you can configure the directory options
-   */
-  dir: {
-    assets: 'app/src/core/assets',
-    layouts: 'app/src/core/layouts',
-    middleware: 'app/middlewares',
-    plugins: 'app/src/plugins',
+  app: {
+    head: {
+      title: 'Nuxt3 DDD',
+    },
   },
 
   /**
@@ -50,15 +39,66 @@ export default defineNuxtConfig({
   build: {},
 
   /**
+   * @description Specify a compatibility date for your app. This is used to control the behavior of presets in Nitro, Nuxt Image and other modules that may change behavior without a major version bump.
+   */
+  compatibilityDate: '2024-11-01',
+
+  /**
+   * @description Here's you can configure the components options
+   */
+  components: {
+    dirs: [
+      {
+        path: 'app/src/core/components',
+        pathPrefix: false,
+      },
+    ],
+  },
+
+  /**
    * @description Here's you can configure the list of css
    */
-  css: ['./app/main.css'],
+  css: ['./app/src/core/assets/styles/main.css'],
+
+  /**
+   * @description Here's you can configure the directory options
+   */
+  dir: {
+    assets: 'app/src/core/assets',
+    layouts: 'app/src/core/components/layouts',
+    middleware: 'app/middlewares',
+    plugins: 'app/src/plugins',
+  },
 
   /**
    * @description Here's you can configure to turn on the dev tools
    */
   devtools: {
     enabled: true,
+  },
+
+  /**
+   * @description Here's you can configure the features options
+   * @note This is one of approach to enable us to migrate to Nuxt 4. For more information, please visit https://www.youtube.com/watch?v=r4wFKlcJK6c
+   */
+  future: {
+    compatibilityVersion: 3, // Please set this to 4 when you are ready to migrate to Nuxt 4
+  },
+
+  /**
+   * @description Here's you can configure the nuxt image options
+   */
+  image: {
+    dir: 'app/src/core/assets',
+    domains: [],
+    format: ['webp'],
+  },
+
+  /**
+   * @description Here's you can configure the auto import options
+   */
+  imports: {
+    dirs: ['./app/src/core/composables', './app/src/core/constants'],
   },
 
   /**
@@ -71,6 +111,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@vueuse/nuxt',
     'nuxt-security',
+    'pinia-plugin-persistedstate/nuxt',
   ],
 
   /**
@@ -91,7 +132,9 @@ export default defineNuxtConfig({
    * @description Here's you can configure runtime options
    */
   runtimeConfig: {
-    public: {},
+    public: {
+      apiBase: process.env.NUXT_PUBLIC_API_BASE_URL ?? 'https://api.example.com/',
+    },
   },
 
   /**

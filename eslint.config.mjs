@@ -39,6 +39,7 @@ export default withNuxt(
           order: ['script', 'template', 'style'],
         },
       ],
+      'vue/html-self-closing': ['off'],
       'vue/multi-word-component-names': ['off'],
       'vue/no-mutating-props': [
         'error',
